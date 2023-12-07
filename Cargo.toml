@@ -27,8 +27,8 @@ anyhow = "1.0.69"
 reqwest = { version = "0.11.14", optional = true, default-features = false, features = [
     "rustls-tls",
 ] }
-hrana-client = { version = "0.3", optional = true }
-hrana-client-proto = { version = "0.2" }
+hrana-client = { git = "https://github.com/chrissuozzo/hrana-client-rs", branch = "dev", optional = true }
+hrana-client-proto = { git = "https://github.com/chrissuozzo/hrana-client-rs", branch = "dev" }
 futures-util = { version = "0.3.21", optional = true }
 serde = "1.0.159"
 tracing = "0.1.37"
